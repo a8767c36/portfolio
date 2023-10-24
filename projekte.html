@@ -1,0 +1,56 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="design-wide.css">
+
+<div class="container">
+<div class="row border-bottom border-primary" id="header">
+	<h3 class="pl-2 pt-1">Portfolio - Lorenzo Ferrara</h3>
+</div>
+
+<div id="navbar-top" class="row d-md-none">
+	<button type="button" class="btn btn-block btn-outline-success" onclick="toggle_menu()">Navigation</button>
+</div>
+
+<script>
+function toggle_menu () {
+	$("#navbar-left").toggleClass("active");
+}
+</script>
+
+<div class="row">
+	<div id="navbar-left" class="col-12 col-md-3 border-right border-success" role="menu">
+		<div class="item p-2"><a href="intro.html">Übersicht</a></div>
+		<div class="item p-2"><a href="person.html">Persönliches</a></div>
+		<div class="item p-2"><a href="projekte.html">Projekte</a></div>
+		<div class="item p-2"><a href="kontakt.html">Kontakt</a></div>
+	</div>
+
+	<div id="content" class="col-12 col-md-9 border-bottom border-dark" style="background: white">
+
+<h4 class="pt-2">Projekte</h3>
+
+<ul>
+<li class="m-2">Eigener Kernel auf x86_64 (UEFI boot)
+
+<li class="m-2">Scraper für Website der Uni Wien (alle angebotenen Kurse in DB eintragen)
+
+<li class="m-2">“Mars Explorer” - Computerspiel
+
+<li class="m-2">Lego Roboter - Hardware / Software (NXC)
+</ul>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lego_Mindstorms_Nxt-FLL.jpg/640px-Lego_Mindstorms_Nxt-FLL.jpg" class="rounded mx-auto d-block mb-3" style="width: 50%">
+
+	</div>
+</div>
+
+</div>
+
