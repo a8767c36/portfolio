@@ -1,13 +1,26 @@
 /* StyleSheet for narrow devices */
 
-#header {
-}
 
 #navbar {
-
+	/* used to give orientation for dropdown icon */
+	position: relative;
+}
+#navbar > div {
+	display: none;
+}
+#navbar > div.active {
+	display: block;
+}
+#navbar:hover > div {
+	display: block;
 }
 
 
-#navbar.collapsed > .item {
+#navbar .menu-icon {
+	position: absolute;
+	top: 8px;
+	right: 1em;
+}
+#navbar:hover .menu-icon {
 	display: none;
 }

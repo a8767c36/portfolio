@@ -3,24 +3,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="design.css">
 <link rel="stylesheet" href="design-wide.css">
 
 <div class="container">
 <div class="row border-bottom border-primary" id="header">
-	<h3>Portfolio - Lorenzo Ferrara</h3>
+	<h3 class="pl-2 pt-1">Portfolio - Lorenzo Ferrara</h3>
 </div>
 
 <div class="row">
-	<div id="navbar" class="col-12 col-sm-3 border border-top-0 border-success">
-		<div class="item pt-2 pb-2"><a href="intro">link 1</a></div>
-		<div class="item pt-2 pb-2">link 2</div>
-		<div class="item pt-2 pb-2">link 3</div>
-		<div class="item pt-2 pb-2">link 4</div>
+	<div id="navbar" class="col-12 col-sm-3 border border-top-0 border-success" role="menu">
+		<div class="item pt-2 pb-2 active"><a href="intro">Übersicht</a></div>
+		<div class="item pt-2 pb-2"><a href="person">Persönliches</a></div>
+		<div class="item pt-2 pb-2"><a href="hobbies">Hobbys</a></div>
+		<div class="item pt-2 pb-2"><a href="kontakt">Kontakt</a></div>
+		<span class="menu-icon"><span class="fa fa-bars"></span></span>
 	</div>
 
 	<div id="content" class="col-12 col-md-9 border-bottom border-dark" style="background: white">
-		<h3>Wieso Sie mich als Softwareentwickler anheuern sollten</h3>
+		<h3 class="pt-2">Wieso Sie mich als Softwareentwickler anheuern sollten</h3>
 		<p>
 		</p>
 		<ul>
@@ -31,6 +33,13 @@
 		<p>
 			Ich habe viel Erfahrung, und möchte diese Erfahrung in praktische Projekte einfließen lassen.
 		</p>
+
+		<!-- Werbung -->
+		<p>
+			Treffen Sie heute die Entscheidung, sich schneller zu bewegen, indem sie
+			einen zusätzlichen Gehilfen anheuern.
+		</p>
+		<button class="btn btn-primary mb-5" onclick="location.href = 'kontakt'">Jetzt Gehilfen anheuern</button>
 	</div>
 </div>
 

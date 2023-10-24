@@ -1,7 +1,15 @@
 /* StyleSheet for wide devices */
 
 @media (min-width: 768px) {
-	body {
-	}
+
+/* on the left side a solid navbar */
+#navbar > div {
+	display: block;
+}
+#navbar .menu-icon {
+	display: none;
+}
+
+
 }
 
