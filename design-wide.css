@@ -1,0 +1,7 @@
+/* StyleSheet for wide devices */
+
+@media (min-width: 768px) {
+	body {
+	}
+}
+

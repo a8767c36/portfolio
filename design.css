@@ -1,0 +1,13 @@
+/* StyleSheet for narrow devices */
+
+#header {
+}
+
+#navbar {
+
+}
+
+
+#navbar.collapsed > .item {
+	display: none;
+}
