@@ -1,0 +1,65 @@
+/* StyleSheet */
+/* Mobile first */
+
+#header {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+
+	height: 3rem;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+#icon {
+	color: green;
+	font-style: italic;
+}
+#burger {
+	color: #aaa;
+}
+
+
+
+/* make the navbar sticky (mobile -> top, desktop -> left) */
+#navbar-left-container {
+	position: fixed;
+	z-index: 1;
+
+	background: white;
+}
+@media (min-width: 768px) {
+	#navbar-left-container {
+		position: static;
+	}
+	#navbar-left {
+		position: sticky;
+		top: 3rem;
+		z-index: 1;
+	}
+}
+
+/* make the navbar visible on click (mobile) or default (desktop) */
+#navbar-left {
+	display: none;
+}
+@media (min-width: 768px) {
+	#navbar-left {
+		display: block;
+	}
+}
+#navbar-left.active {
+	display: block;
+}
+
+/* give the navbar some borders */
+#navbar-left > div {
+	border-bottom: 1px solid black;
+}
+@media (min-width: 768px) {
+	#navbar-left-container {
+		border-width: 0 1px 0 0;
+		border-style: solid;
+	}
+}
