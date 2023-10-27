@@ -27,15 +27,16 @@ function toggle_menu () {
 	<div class="col-12 col-md-3 border-success" role="menu" id="navbar-left-container">
 		<div id="navbar-left">
 			<div class="item p-2"><a href="#intro">Übersicht</a></div>
+			<div class="item p-2"><a href="#software">Software</a></div>
 			<div class="item p-2"><a href="#person">Persönliches</a></div>
 			<div class="item p-2"><a href="#projekte">Projekte</a></div>
 			<div class="item p-2"><a href="#kontakt">Kontakt</a></div>
 		</div>
 	</div>
 
-<div id="content" class="col-12 col-md-9 border-bottom border-dark pt-1">
+<div id="content" class="col-12 col-md-9 pt-1">
 
-<div class="position-relative mb-5">
+<div class="position-relative mb-5" id="intro">
 	<img class="img-fluid" src="https://cdn-media-1.freecodecamp.org/images/lZYW9AXx3yncn8AKjXfSfJIfxdjmvclgvIy7">
 	<div class="position-absolute" style="top: 2rem; left: 2rem; color: #bbc">
 		<h3>Lorenzo Ferrara</h3>
@@ -44,7 +45,7 @@ function toggle_menu () {
 	</div>
 </div>
 
-	<h3 class="pt-2 text-center font-italic mb-4">Softwareentwickler</h3>
+	<h3 class="pt-2 text-center font-italic mb-4" id="software">Softwareentwickler</h3>
 	<div class="jumbotron">
 		<h5 class="font-weight-bold font-italic mb-3">
 			Meine Qualitäten:
@@ -66,25 +67,20 @@ function toggle_menu () {
 	</div>
 
 
-<h3 class="pt-2">Persönliches</h3>
+<h3 class="pt-2 font-italic text-center mb-4" id="person">Zur Person</h3>
 
-<p>Name: Lorenzo Ferrara</p>
-
-<p>Geburtstag: 26.06.1999</p>
-
-<p>Hobbys: Schlafen, Programmieren, Philosophie & Meditation</p>
-
-<p>Lernerfahrungen:</p>
-<ul style="margin-top: -0.5rem">
-	<li> Selbststudium: C, Linux, HTML/CSS, Javascript, Apache, SQL
-	<li> Universitär: BSc Mathematik (164,5/180 ECTS absolviert)
-</ul>
+<div class="jumbotron mb-5">
+	<ul class="mb-0">
+		<li>Bachelor Mathematik (in progress)
+		<li>langjährige Programmiererfahrung
+	</ul>
+</div>
 
 
 
-<h4 class="pt-2">Projekte</h3>
+<h4 class="pt-4 pb-3 font-weight-bold" id="projekte">Projekte</h3>
 
-<ul>
+<ul style="line-height: 2.0rem">
 <li class="m-2">Eigener Kernel auf x86_64 (UEFI boot)
 
 <li class="m-2">Scraper für Website der Uni Wien (alle angebotenen Kurse in DB eintragen)
@@ -94,28 +90,25 @@ function toggle_menu () {
 <li class="m-2">Lego Roboter - Hardware / Software (NXC)
 </ul>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lego_Mindstorms_Nxt-FLL.jpg/640px-Lego_Mindstorms_Nxt-FLL.jpg" class="rounded mx-auto d-block mb-3" style="width: 50%">
-
-
-
-<h3 class="pt-2">Kontakt</h3>
-
-<p>Name: Lorenzo Ferrara</p>
-
-<p>E-Mail: <a href="mailto:lorenzo.ferrara@gmx.at">lorenzo.ferrara@gmx.at</a></p>
-
-<p>Tel: <a href="tel:+436705578035">+43 670 557 80 35</a></p>
-
-<p>Adresse:</p>
-<pre style="margin-top: -0.5rem">
-    Gumpendorferstraße 34/12
-    1060 Wien
-    Österreich
-</pre>
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lego_Mindstorms_Nxt-FLL.jpg/640px-Lego_Mindstorms_Nxt-FLL.jpg" class="rounded mx-auto d-block pt-2 pb-2 mb-5" style="width: 50%">
 
 	</div>
 </div>
 
-</div>
+</div> <!-- container -->
 
+<div id="kontakt" class="container pt-3 pl-5" style="background: black; color: white; font-size: 1rem">
+	<h3 class="pt-2 pb-2 font-italic" style="font-size: 2rem">Kontakt</h3>
+
+	<div style="line-height: 1.8rem">
+	<div>Name: Lorenzo Ferrara</div>
+	<div>E-Mail: <a href="mailto:lorenzo.ferrara@gmx.at">lorenzo.ferrara@gmx.at</a></div>
+	<div>Tel: <a href="tel:+436705578035">+43 670 557 80 35</a></div>
+	<div>Adresse:</div>
+	<pre class="pl-4 pt-2" style="margin-bottom: 0; color: white; line-height: 1.5rem">
+Gumpendorferstraße 34/12
+1060 Wien
+Österreich
+	</pre>
+	</div>
+</div>

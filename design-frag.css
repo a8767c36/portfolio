@@ -1,6 +1,11 @@
 /* StyleSheet */
 /* Mobile first */
 
+html {
+	scroll-padding-top: 3.5rem;
+	scroll-behavior: smooth;
+}
+
 #header {
 	position: sticky;
 	top: 0;
@@ -24,7 +29,8 @@
 
 /* make the navbar sticky (mobile -> top, desktop -> left) */
 #navbar-left-container {
-	position: fixed;
+	position: sticky;
+	top: 3rem;
 	z-index: 1;
 
 	background: white;
